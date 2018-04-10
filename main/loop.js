@@ -11,7 +11,7 @@ myFile.runContents();
 function shouldContinue() {
   // check one: Any pending setTimeout, setInterval, setImmediate?
   // check two: Any pending OS tasks? (Like server listening to port)
-  // check three: Any pending long running operations? (like fd module)
+  // check three: Any pending long running operations? (like fs module)
 
   return pendingTimers.length || pendingOSTasks.length || pendingOperations.length;
 
